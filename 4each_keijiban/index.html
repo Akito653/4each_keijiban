@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">  
+    <head>
+        <meta charset="UTF-8">
+        <title>4eachblog 掲示板</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body> 
+        
+        <img src="4eachblog_logo.jpg">
+
+        <header>
+            <ul>
+                <li>トップ</li>
+                <li>プロフィール</li>
+                <li>4eachについて</li>
+                <li>登録フォーム</li>
+                <li>問い合わせ</li>
+                <li>その他</li>
+            </ul>
+        </header>
+        <main>
+            <div class="container">
+                <div class="left">
+                    <h1>プログラミングに役立つ掲示板</h1>
+                    
+                    <div class="senders">
+                        <form method="post" action="insert.php">
+                            <div class="line">入力フォーム</div>
+                            <label>ハンドルネーム</label>
+                            <br>
+                            <input type="text" size="35" name="handlename">
+                            <div>
+                                <label><br>タイトル</label>
+                                <br>
+                                <input type="text" size="35" name="title">
+                            </div>
+                            <div>
+                                <label><br>コメント</label>
+                                <br>
+                                <textarea cols="60" rows="7" name="comments"></textarea>
+                            </div>
+                            <div>
+                                <input type="submit" value="投稿する" class="btn">
+                            </div>
+                        </form>
+                    </div>
+                    <div class='kiji'><h3>感激しました。</h3><div class='contents'><div class='handlename'>posted by Mr.SE</div></div></div><div class='kiji'><h3>刺激を受けました！</h3><div class='contents'>すごい勉強になりました。私も頑張ります。<div class='handlename'>posted by Mr.SE</div></div></div><div class='kiji'><h3>勉強になりました。</h3><div class='contents'>今までなかった視点です。勉強になりました。<div class='handlename'>posted by Ms。programmer</div></div></div><div class='kiji'><h3>感動</h3><div class='contents'><div class='handlename'>posted by Mr.SE</div></div></div>                   
+                </div>
+                <div class="right">
+                    <h3>人気の記事</h3>
+                    <ul>
+                        <li>PHPのオススメ本</li>
+                        <li>PHP　MyAdminの使い方</li>
+                        <li>今話題のエディタ Top5</li>
+                        <li>HTMLの基礎</li>
+                    </ul>
+                        <br>
+                    <h3>オススメリンク</h3>
+                    <ul>
+                        <li>インターノウス株式会社</li>
+                        <li>XAMPPのダウンロード</li>
+                        <li>Eclipseのダウンロード</li>
+                        <li>Bracketsのダウンロード</li>
+                    </ul>
+                        <br>
+                    <h3>カテゴリ</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>PHP<li>
+                        <li>MySQL</li>
+                        <li>javaScript</li>
+                    </ul>    
+                </div>
+            </div>
+        </main>
+        <footer>
+            copyright (c) internous | 4each blog is the one which provides A to Z about programming.
+        </footer>    
+    </body>
+</html>
+
